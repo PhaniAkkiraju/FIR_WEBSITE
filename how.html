@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - FIR Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: gold; /* Added gold background color */
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            position: relative;
+        }
+
+        nav a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: transparent;
+            transform-origin: bottom right;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover::before,
+        nav a:focus::before,
+        nav a:active::before {
+            transform: scaleX(1);
+            background-color: white;
+        }
+
+        .content {
+            text-align: center;
+            padding: 2em;
+        }
+
+        .steps {
+            margin-top: 2em;
+        }
+
+        .step {
+            margin-bottom: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FIR Website</h1>
+    </header>
+
+    <nav>
+        <a href="frontpage.html">Home</a>
+        <a id="faq-link" href="faq.html">FAQ</a>
+        <a id="contact-link" href="contact.html">Contact</a>
+    </nav>
+    
+    <div class="content">
+        <h2>How It Works</h2>
+        <p>Welcome to the FIR Website, where you can easily file a First Information Report demo online(unofficial). Here's how it works:</p>
+
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1: File an FIR</h3>
+                <p>Click on the "File FIR" button on the home page. Fill in the required information about the incident and submit the report.</p>
+            </div>
+
+            <div class="step">
+                <h3>Step 2: You can view your FIR</h3>
+                <p>Once your FIR is filed, you can track its status through your account. Receive updates on the progress of your report.</p>
+            </div>
+        </div>
+
+        <h2>Use of the Website</h2>
+        <p>Our platform is designed to simplify the process of filing and tracking FIRs. It provides a convenient and secure way for users to report incidents and contribute to maintaining law and order.</p>
+        <!-- Add more information about the features and benefits of your website as needed -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 FIR Website. All rights reserved by Meghana, Pujitha, Phani, Sathwika.</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3498db;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+        h1 {
+            cursor: pointer;
+            color: white;
+        }
+        h1.main {
+            background-color: black;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center; 
+        }
+        h1.main img {
+            margin-right: 10px;
+            height: 80px;
+        }
+
+        h2 {
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        h2.indian-section {
+            background-color: #000;
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .divider {
+    border: 1px dotted #fff;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.small-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+        #content {
+            margin-top: 10px;
+        }
+
+        .content-section {
+            display: none;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #fff;
+            padding: 8px;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main">
+        <img src="lion.webp" alt="Logo">
+        All Sections List
+    </h1>
+    <hr class="divider">
+
+    <h3 class="small-title">IPC 1860, India</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Section</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr onclick="showContent('section1')">
+                <td>Section 1</td>
+                <td>Title and extent of operation of the Code</td>
+            </tr>
+            <tr onclick="showContent('section2')">
+                <td>Section 2</td>
+                <td>Punishment of offences committed within India</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 3</td>
+                <td>Punishment of offences committed beyond, but which by law may be tried within, India</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 4</td>
+                <td>Extension of Code to extra-territorial offences</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 5</td>
+                <td>Certain laws not to be affected by this Act</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 6</td>
+                <td> Definitions in the Code to be understood subject to exceptions</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 7</td>
+                <td>Sense of expression once explained</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 8</td>
+                <td>Gender</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 9</td>
+                <td>Number</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 10</td>
+                <td> “Man” “Woman”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 11</td>
+                <td>“Person”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 12</td>
+                <td>“Public”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 13</td>
+                <td>Definition of “Queen”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 14</td>
+                <td>“Servant of Government”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 15</td>
+                <td>Definition of “British India”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 16</td>
+                <td>Definition of “Government of India”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 17</td>
+                <td>“Government”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 18</td>
+                <td>“India”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 19</td>
+                <td>“Judge”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 20</td>
+                <td>“Court of Justice”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 21</td>
+                <td>“Public servant”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 22</td>
+                <td>“Movable property”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 23</td>
+                <td>“Wrongful gain”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 24</td>
+                <td>“Dishonestly”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 25</td>
+                <td>“Fraudulently”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 26</td>
+                <td>“Reason to believe”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 27</td>
+                <td> Property in possession of wife, clerk or servant</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 28</td>
+                <td>“Counterfeit”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 29</td>
+                <td> “Document”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 29A</td>
+                <td> “Electronic record”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 30</td>
+                <td>“Valuable security”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 31</td>
+                <td>“A will”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 32</td>
+                <td>Words referring to acts include illegal omissions</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 33</td>
+                <td>“Act”. “Omission”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 34</td>
+                <td>Acts done by several persons in furtherance of common intention -</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 35</td>
+                <td>When such an act is criminal by reason of its being done with a criminal knowledge or intention</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 36</td>
+                <td>Effect caused partly by act and partly by omission</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 37</td>
+                <td>Co-operation by doing one of several acts constituting an offence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 38</td>
+                <td>Persons concerned in criminal Act may be guilty of different offences</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 39</td>
+                <td>“Voluntarily”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 40</td>
+                <td> “Offence”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 41</td>
+                <td>“Special law”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 42</td>
+                <td>“Local law”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 43</td>
+                <td>“Illegal”, “Legally bound to do”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 44</td>
+                <td> “Injury”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 45</td>
+                <td>“Life”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 46</td>
+                <td>“Death”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 47</td>
+                <td>“Animal”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 48</td>
+                <td>“Vessel”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 49</td>
+                <td>“Year”, “Month”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 50</td>
+                <td> “Section”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 51</td>
+                <td>“Oath”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 52</td>
+                <td>“Good faith”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 52A</td>
+                <td>“Harbour”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 53</td>
+                <td>Punishments</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 53A</td>
+                <td>Construction of reference to transportation</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 54</td>
+                <td> Commutation of sentence of death</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 55</td>
+                <td>Commutation of sentence of imprisonment for life</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 55A</td>
+                <td>Definition of “appropriate Government”</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 56</td>
+                <td>(Repealed) Sentence of Europeans and Americans to penal servitude</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 57</td>
+                <td>Fractions of terms of punishment</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 58</td>
+                <td>(Repealed) Offenders sentenced to transportation how dealt with until transported</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 59</td>
+                <td>(Repealed) Transportation instead of imprisonment</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 60</td>
+                <td>Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 61</td>
+                <td>(Repealed) Sentence of forfeiture of property</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 62</td>
+                <td>(Repealed) Forfeiture of property in respect of offenders punishable with death, transportation or imprisonment</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 63</td>
+                <td> Amount of fine</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 64</td>
+                <td>Sentence of imprisonment for non-payment of fine</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 65</td>
+                <td>Limit to imprisonment for non-payment of fine, when imprisonment and fine awardable</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 66</td>
+                <td>Description of imprisonment for non-payment of fine</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 67</td>
+                <td>Imprisonment for non-payment of fine, when offence punishable with fine only</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 68</td>
+                <td>Imprisonment to terminate on payment of fine</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 69</td>
+                <td> Termination of imprisonment on payment of proportional part of fine</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 70</td>
+                <td>Fine leviable within six years, or during imprisonment – Death not to discharge property from liability</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 71</td>
+                <td>Limit of punishment of offence made up of several offences</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 72</td>
+                <td> Punishment of person guilty of one of several offences, the judgment stating that it is doubtful of which</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 73</td>
+                <td>Solitary confinement</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 74</td>
+                <td>Limit of solitary confinement</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 75</td>
+                <td>Enhanced punishment for certain offences under Chapter XII or Chapter XVII after previous conviction</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 76</td>
+                <td> Act done by a person bound, or by mistake of fact believing himself bound, by law</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 77</td>
+                <td>Act of Judge when acting judicially</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 78</td>
+                <td>Act done pursuant to the judgment or order of Court</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 79</td>
+                <td>Act done by a person justified, or by mistake of fact believing himself, justified, by law</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 80</td>
+                <td>Accident in doing a lawful act</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 81</td>
+                <td>Act likely to cause harm, but done without criminal intent, and to prevent other harm</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 82</td>
+                <td>Act of a child under seven years of age</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 83</td>
+                <td> Act of a child above seven and under twelve of immature understanding</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 84</td>
+                <td>Act of a person of unsound mind</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 85</td>
+                <td>Act of a person incapable of judgment by reason of intoxication caused against his will</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 86</td>
+                <td>Offence requiring a particular intent or knowledge committed by one who is intoxicated</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 87</td>
+                <td>Act not intended and not known to be likely to cause death or grievous hurt, done by consent</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 88</td>
+                <td> Act not intended to cause death, done by consent in good faith for person’s benefit</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 89</td>
+                <td>Act done in good faith for benefit of child or insane person, by or by consent of guardian</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 90</td>
+                <td>Consent known to be given under fear or misconception</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 91</td>
+                <td> Exclusion of acts which are offences independently of harm cause</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 92</td>
+                <td>Act done in good faith for benefit of a person without consent</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 93</td>
+                <td>Communication made in good faith</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 94</td>
+                <td>Act to which a person is compelled by threats</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 95</td>
+                <td>Act causing slight harm</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 96</td>
+                <td>Things done in private defence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 97</td>
+                <td>Right of private defence of the body and of property</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 98</td>
+                <td>Right of private defence against the act of a person of unsound mind, etc.</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 99</td>
+                <td>Acts against which there is no right of private defence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 100</td>
+                <td>When the right of private defence of the body extends to causing death</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 101</td>
+                <td>When such right extends to causing any harm other than death</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 102</td>
+                <td>Commencement and continuance of the right of private defence of the body</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 103</td>
+                <td>When the right of private defence of property extends to causing death</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 104</td>
+                <td>When such right to causing any harm other than death</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 105</td>
+                <td>Commencement and continuance of the right of private defence of property</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 106</td>
+                <td> Right of private defence against deadly assault when there is risk of harm to innocent person</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 107</td>
+                <td>Abetment of a thing</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 108</td>
+                <td>Abettor</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 108A</td>
+                <td>Abetment in India of offences outside India</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 109</td>
+                <td>Punishment of abetment if the act abetted is committed in consequence and where no express provision is made for its punishment</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 110</td>
+                <td>Punishment of abetment if person abetted does act with different intention from that of abettor</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 111</td>
+                <td>Liability of abettor when one act abetted and different act done</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 112</td>
+                <td> Abettor when liable to cumulative punishment for act abetted and for act done</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 113</td>
+                <td>Liability of abettor for an effect caused by the act abetted different from that intended by the abettor</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 114</td>
+                <td>Abettor present when offence is committed</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 115</td>
+                <td>Abetment of offence punishable with death or imprisonment for life if offence not committed</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 116</td>
+                <td>Abetment of offence punishable with imprisonment—if offence be not committed</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 117</td>
+                <td>Abetting commission of offence by the public or by more than ten persons</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 118</td>
+                <td>Concealing design to commit offence punishable with death or imprisonment for life</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 119</td>
+                <td>Public servant concealing design to commit offence which it is his duty to prevent</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 120</td>
+                <td> Concealing design to commit offence punishable with imprisonment</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 120A</td>
+                <td>Definition of criminal conspiracy</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 120B</td>
+                <td>Punishment of criminal conspiracy</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 121</td>
+                <td>Waging, or attempting to wage war, or abetting waging of war, against the Government of India</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 121A</td>
+                <td>Conspiracy to commit offences punishable by section 121</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 122</td>
+                <td>Collecting arms, etc., with intention of waging war against the Government of India</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 123</td>
+                <td>Concealing with intent to facilitate design to wage war</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 124</td>
+                <td> Assaulting President, Governor, etc., with intent to compel or restrain the exercise of any lawful power</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 124A</td>
+                <td>Sedition</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 125</td>
+                <td>Waging war against any Asiatic Power in alliance with the Government of India</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 126</td>
+                <td>Committing depredation on territories of Power at peace with the Government of India</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 127</td>
+                <td>Receiving property taken by war or depredation mentioned in sections 125 and 126</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 128</td>
+                <td>Public servant voluntarily allowing prisoner of state or war to escape</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 129</td>
+                <td>Public servant negligently suffering such prisoner to escape</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 130</td>
+                <td>Aiding escape of, rescuing or harbouring such prisoner</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 131</td>
+                <td>Abetting mutiny, or attempting to seduce a soldier, sailor or airman from his duty</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 132</td>
+                <td>Abetment of mutiny, if mutiny is committed in consequence thereof</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 133</td>
+                <td>Abetment of assault by soldier, sailor or airman on his superior officer, when in execution of his office</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 134</td>
+                <td>Abetment of such assault, if the assault committed</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 135</td>
+                <td> Abetment of desertion of soldier, sailor or airman</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 136</td>
+                <td>Harbouring deserter</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 137</td>
+                <td>Deserter concealed on board merchant vessel through negligence of master</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 138</td>
+                <td>Abetment of act of insubordination by soldier, sailor or airman</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 138A</td>
+                <td>(Repealed) Application of foregoing sections to the Indian Marine Service.</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 139</td>
+                <td> Persons subject to certain Acts</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 140</td>
+                <td>Wearing garb or carrying token used by soldier, sailor or airman</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 141</td>
+                <td>Unlawful assembly</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 142</td>
+                <td>Being member of unlawful assembly</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 143</td>
+                <td> Punishment</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 144</td>
+                <td> Joining unlawful assembly armed with deadly weapon</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 145</td>
+                <td>Joining or continuing in unlawful assembly, knowing it has been commanded to disperse</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 146</td>
+                <td>Rioting</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 147</td>
+                <td>Punishment for rioting</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 148</td>
+                <td>Rioting, armed with deadly weapon</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 149</td>
+                <td> Every member of unlawful assembly guilty of offence committed in prosecution of common object</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 150</td>
+                <td>Hiring, or conniving at hiring, of persons to join unlawful assembly</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 151</td>
+                <td>Knowingly joining or continuing in assembly of five or more persons after it has been commanded to disperse</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 152</td>
+                <td>Assaulting or obstructing public servant when suppressing riot, etc.</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 153</td>
+                <td>Want only giving provocation with intent to cause riot – if rioting be committed: if not committed</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 153A</td>
+                <td>Promoting enmity between different groups on ground of religion, race, place of birth, residence, language, etc., and doing acts prejudicial to maintenance of harmony</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 153B</td>
+                <td>Imputations, assertions prejudicial to national integration</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 154</td>
+                <td>Owner or occupier of land on which an unlawful assembly is held</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 155</td>
+                <td> Liability of person for whose benefit riot is committed</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 156</td>
+                <td> Liability of agent of owner or occupier for whose benefit riot is committed</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 157</td>
+                <td>Harbouring persons hired for an unlawful assembly</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 158</td>
+                <td>Being hired to take part in an unlawful assembly or riot</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 159</td>
+                <td> Affray</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 160</td>
+                <td>Punishment for committing affray</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 161</td>
+                <td>Rep. by the Prevention of Corruption Act, 1988 (49 of 1988), s. 31</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 162</td>
+                <td>Rep. by the Prevention of Corruption Act, 1988 (49 of 1988), s. 31.</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 163</td>
+                <td>Rep. by the Prevention of Corruption Act, 1988 (49 of 1988), s. 31</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 164</td>
+                <td>Rep. by the Prevention of Corruption Act, 1988 (49 of 1988), s. 31.</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 165</td>
+                <td>Rep. by the Prevention of Corruption Act, 1988 (49 of 1988), s. 31.</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 165A</td>
+                <td>Rep. by the Prevention of Corruption Act, 1988 (49 of 1988), s. 31.</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 166</td>
+                <td> Public servant disobeying law, with intent to cause injury to any person</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 166A</td>
+                <td>Public Servant disobeying direction under Law1</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 166B</td>
+                <td>Punishment for non treatment of victim1</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 167</td>
+                <td>Public servant framing an incorrect document with intent to cause injury</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 168</td>
+                <td>Public servant unlawfully engaging in trade</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 169</td>
+                <td> Public servant unlawfully buying or bidding for property</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 170</td>
+                <td> Personating a public servant</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 171</td>
+                <td>Wearing garb or carrying token used by public servant with fraudulent intent</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 171A</td>
+                <td>“Candidate”, “Electoral right” defined</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 171B</td>
+                <td>Bribery</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 171C</td>
+                <td>Undue influence at elections</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 171D</td>
+                <td>Personation at elections</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 171E</td>
+                <td>Punishment for bribery</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 171F</td>
+                <td>Punishment for undue influence or personation at an election</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 171G</td>
+                <td>False statement in connection with an election</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 171H</td>
+                <td>Illegal payments in connection with an election</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 171</td>
+                <td>I Failure to keep election accounts</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 172</td>
+                <td>Absconding to avoid service of summons or other proceeding</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 173</td>
+                <td>Preventing service of summons or other proceeding, or preventing publication thereof</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 174</td>
+                <td>Non-attendance in obedience to an order from public servant</td>
+            </tr>
+            <tr onclick="showContent('section3')"> 
+                <td>Section 174A</td>
+                <td>Non-appearance in response to a proclamation under section 82 of Act 2 of 1974</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 175</td>
+                <td>Omission to produce document to public servant by person legally bound to produce it</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 176</td>
+                <td>Omission to give notice or information to public servant by person legally bound to give it</td>
+            </tr>Omission to give notice or information to public servant by person legally bound to give it Whoever, being legally bound to give any notice or to furnish information on any subject to any public servant, as such, intentionally omits to give such notice or to furnish such information in the manner and at the time required by law, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to five hundred rupees, or with both;or, if the notice or information required to be given respects the commission of an offence, or is required for the purpose of preventing the commission of an offence, or in order to the apprehension of an offender, with simple imprisonment for a term which may extend to six months, or with fine which may extend to one thousand rupees, or with both;or, if the notice or information required to be given is required by an order passed under sub-section (1) of section 565 of the Code of Criminal Procedure, 1898 (5 of 1898), with imprisonment of either description for a term which may extend to six months, or with fine which may extend to one thousand rupees, or with both. 
+            Read more at: https://devgan.in/ipc/chapter_10.php
+            <tr onclick="showContent('section3')">
+                <td>Section 177</td>
+                <td> Furnishing false information</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 178</td>
+                <td> Refusing oath or affirmation when duly required by public servant to make it</td>
+            <tr onclick="showContent('section3')">
+                <td>Section 179</td>
+                <td>Refusing to answer public servant authorized to question</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 180</td>
+                <td> Refusing to sign statement</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 181</td>
+                <td>False statement on oath or affirmation to public servant or person authorized to administer an oath or affirmation</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 182</td>
+                <td>False information, with intent to cause public servant to use his lawful power to the injury of another person</td>
+          <tr onclick="showContent('section3')">
+                <td>Section 183</td>
+                <td>Resistance to the taking of property by the lawful authority of a public servant</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 184</td>
+                <td>Obstructing sale of property offered for sale by authority of public servant</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 185</td>
+                <td>Illegal purchase or bid for property offered for sale by authority of public servant</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 186</td>
+                <td>Omission to assist public servant when bound by law to give assistance</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 187</td>
+                <td> Obstructing public servant in discharge of public functions</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 188</td>
+                <td>Disobedience to order duly promulgated by public servant</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 189</td>
+                <td>Threat of injury to public servant</td>
+            <tr onclick="showContent('section3')">
+                <td>Section 190</td>
+                <td>Threat of injury to induce person to refrain from applying for protection to public servant</td>
+            <tr onclick="showContent('section3')">
+                <td>Section 191</td>
+                <td>Giving false evidence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 192</td>
+                <td> Fabricating false evidence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 193</td>
+                <td>Punishment for false evidence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 194</td>
+                <td>Giving or fabricating false evidence with intent to procure conviction of capital offence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 195</td>
+                <td>Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 195A</td>
+                <td>Threatening any person to give false evidence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 196</td>
+                <td>Using evidence known to be false</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 197</td>
+                <td>Issuing or signing false certificate</td>
+            <tr onclick="showContent('section3')">
+                <td>Section 198</td>
+                <td>Using as true a certificate known to be false</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 199</td>
+                <td>tFalse statement made in declaration which is by law receivable as evidence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 200</td>
+                <td>tUsing as true such declaration knowing it to be false</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 201</td>
+                <td>Causing disappearance of evidence of offence, or giving false information to screen offender</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 202</td>
+                <td> Intentional omission to give information of offence by person bound to inform</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 203</td>
+                <td> Giving false information respecting an offence committed</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 204</td>
+                <td>Destruction of document to prevent its production as evidence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 205</td>
+                <td>False personation for purpose of act or proceeding in suit or prosecution</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 206</td>
+                <td>Fraudulent removal or concealment of property to prevent its seizure as forfeited or in execution</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 207</td>
+                <td>Fraudulent claim to property to prevent its seizure as forfeited or in execution</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 208</td>
+                <td> Fraudulently suffering decree for sum not due</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 209</td>
+                <td>Dishonesty making false claim in Court</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 210</td>
+                <td> Fraudulently obtaining decree for sum not due</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 211</td>
+                <td>False charge of offence made with intent to injure</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 212</td>
+                <td>Harbouring offender</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 213</td>
+                <td>Taking gift, etc., to screen an offender from punishment</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 214</td>
+                <td>Offering gift or restoration of property in consideration of screening offender</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 215</td>
+                <td>Taking gift to help to recover stolen property, etc</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 216</td>
+                <td>Harbouring offender who has escaped from custody or whose apprehension has been ordered</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 216A</td>
+                <td>Penalty for harbouring robbers or dacoits</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 216B</td>
+                <td> (Repealed) Definition of “harbour” in sections 212, 216 and 216A</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 217</td>
+                <td>Public servant disobeying direction of law with intent to save person from punishment or property from forfeiture</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 218</td>
+                <td>Public servant framing incorrect record or writing with intent to save person from punishment or property from forfeitur</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 219</td>
+                <td>Public servant in judicial proceeding corruptly making report, etc., contrary to law</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 220</td>
+                <td>Commitment for trial or confinement by person having authority who knows that he is acting contrary to law</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 221</td>
+                <td>Intentional omission to apprehend on the part of public servant bound to apprehend</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 222</td>
+                <td>Intentional omission to apprehend on the part of public servant bound to apprehend person under sentence or lawfully committed</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 223</td>
+                <td>Escape from confinement or custody negligently suffered by public servant</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 224</td>
+                <td>Resistance or obstruction by a person to his lawful apprehension</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 225</td>
+                <td>Resistance or obstruction to lawful apprehension of another person</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 225A</td>
+                <td>Omission to apprehend, or sufferance of escape, on part of public servant, in cases not otherwise, provided for</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 225B</td>
+                <td>Resistance or obstruction to lawful apprehension, or escape or rescue in cases not otherwise provided for</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 226</td>
+                <td>(Repealed) Unlawful return from transportation</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 227</td>
+                <td>Violation of condition of remission of punishment</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 228</td>
+                <td>Intentional insult or interruption to public servant sitting in judicial proceeding</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 229</td>
+                <td>Personation of a juror or assessor</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 229A</td>
+                <td>A failure by person released on bail or bond to appear in court</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 230</td>
+                <td>Coin” defined</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 231</td>
+                <td> Counterfeiting coin</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 232</td>
+                <td>Counterfeiting Indian coin</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 233</td>
+                <td>Making or selling instrument for counterfeiting coin</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 234</td>
+                <td>Making or selling instrument for counterfeiting Indian coin</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 235</td>
+                <td>Possession of instrument or material for the purpose of using the same for counterfeiting coin</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 236</td>
+                <td>Abetting in India the counterfeiting out of India of coin</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 237</td>
+                <td>Import or export of counterfeit coin</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 238</td>
+                <td> Import or export of counterfeits of the Indian coin</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 239</td>
+                <td>Delivery of coin possessed with knowledge that it is counterfeit</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 240</td>
+                <td>Delivery of Indian coin, possessed with knowledge that it is counterfeit</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 241</td>
+                <td>Delivery of coin as genuine, which, when first possessed, the deliverer did not know to be counterfeit</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 242</td>
+                <td>Possession of counterfeit coin by person who knew it to be counterfeit when he became possessed thereof</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 243</td>
+                <td>Possession of Indian coin by person who knew it to be counterfeit when he became possessed thereof</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 244</td>
+                <td>Person employed in mint causing coin to be of different weight or composition from that fixed by law</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 245</td>
+                <td>Person employed in mint causing coin to be of different weight or composition from that fixed by law</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 246</td>
+                <td>Unlawfully taking coining instrument from mint</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 247</td>
+                <td>Fraudulently or dishonestly diminishing weight or altering composition of coin</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 248</td>
+                <td> Fraudulently or dishonestly diminishing weight or altering composition of Indian coin</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 249</td>
+                <td>Altering appearance of coin with intent that it shall pass as coin of different description</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 250</td>
+                <td> Altering appearance of Indian coin with intent that it shall pass as coin of different description</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 251</td>
+                <td>Delivery of coin possessed with knowledge that it is altered</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 252</td>
+                <td>Delivery of Indian coin, possessed with knowledge that it is altered</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 253</td>
+                <td>Possession of coin by person who knew it to be altered when he became possessed thereof</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 254</td>
+                <td>Possession of Indian coin by person who knew it to be altered when he became possessed thereof</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 255</td>
+                <td>Delivery of coin as genuine which, when first possessed, the deliverer did not know to be altered</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 256</td>
+                <td>Counterfeiting Government stamp</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 257</td>
+                <td>Making or selling instrument for counterfeiting Government stamp</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 258</td>
+                <td>Sale of counterfeit Government stamp</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 259</td>
+                <td>Having possession of counterfeit Government stamp</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 260</td>
+                <td>Using as genuine a Government stamp known to be counterfeit</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 261</td>
+                <td>Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it, with intent to cause loss to Government</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 262</td>
+                <td>Using Government stamp known to have been before used</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 263</td>
+                <td>Prohibition of fictitious stamps</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 263A</td>
+                <td>Erasure of mark denoting that stamp has been used</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 264</td>
+                <td>Fraudulent use of false instrument for weighing</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 265</td>
+                <td>Fraudulent use of false weight or measure</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 266</td>
+                <td>Being in possession of false weight or measure</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 267</td>
+                <td>Making or selling false weight or measure</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 268</td>
+                <td>public nuisance</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 269</td>
+                <td>Negligent act likely to spread infection of disease dangerous to life
+                   </td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 270</td>
+                <td>Malignant act likely to spread infection of disease dangerous to life
+                   </td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 271</td>
+                <td>Disobedience to quarantine rule
+                   </td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 272</td>
+                <td>Adulteration of food or drink intended for sale
+                   </td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 273</td>
+                <td>Sale of noxious food or drink
+                   </td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 274</td>
+                <td></td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 275</td>
+                <td>Adulteration of drugs
+                   </td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 276</td>
+                <td>Sale of drug as a different drug or preparation
+                   </td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 277</td>
+                <td>Fouling water of public spring or reservoir
+                   </td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 278</td>
+                <td>Making atmosphere noxious to health
+                   </td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 279</td>
+                <td>Rash driving or riding on a public way
+                   </td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 280</td>
+                <td>Rash navigation of vessel
+                   </td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 281</td>
+                <td>Exhibition of false light, mark or buoy</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 282</td>
+                <td>Conveying person by water for hire in unsafe or overloaded vessel</td>
+            <tr onclick="showContent('section3')">
+                <td>Section 283</td>
+                <td>Danger or obstruction in public way or line of navigation</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 284</td>
+                <td>Negligent conduct with respect to poisonous substance</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 285</td>
+                <td>Negligent conduct with respect to fire or combustible matter</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 286</td>
+                <td>Negligent conduct with respect to explosive substance</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 287</td>
+                <td>Negligent conduct with respect to machinery</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 288</td>
+                <td>Negligent conduct with respect to pulling down or repairing buildings</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 289</td>
+                <td>Negligent conduct with respect to animal</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 290</td>
+                <td>Punishment for public nuisance in cases not otherwise provided for</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 291</td>
+                <td>Continuance of nuisance after injunction to discontinue</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 292</td>
+                <td> Sale, etc., of obscene books, etc.</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 293</td>
+                <td>Sale, etc., of obscene objects to young person</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 294</td>
+                <td>Obscene acts and songs</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 294A</td>
+                <td> Keeping lottery office</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 295</td>
+                <td>Injuring or defiling place of worship, with intent to insult the religion of any class</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 295A</td>
+                <td>Deliberate and malicious acts intended to outrage religious feelings of any class by insulting its religion or religious beliefs</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 296</td>
+                <td>Disturbing religious assembly</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 297</td>
+                <td>Trespassing on burial places, etc</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 298</td>
+                <td>Uttering words, etc., with deliberate intent to wound religious feelings</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 299</td>
+                <td>Culpable homicide</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 300</td>
+                <td> Murder</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 301</td>
+                <td>Culpable homicide by causing death of person other than person whose death was intended</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 302</td>
+                <td> Punishment for murder</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 303</td>
+                <td>Punishment for murder by life-convict</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 304</td>
+                <td>Punishment for culpable homicide not amounting to murder</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 304A</td>
+                <td>Causing death by negligence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 304B</td>
+                <td> Dowry death</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 305</td>
+                <td> Abetment of suicide of child or insane person</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 306</td>
+                <td>Abetment of suicide</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 307</td>
+                <td>Attempt to murder</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 308</td>
+                <td>Attempt to commit culpable homicide</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 309</td>
+                <td>Attempt to commit suicide</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 310</td>
+                <td>Thug</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 311</td>
+                <td> Punishment</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 312</td>
+                <td> Causing miscarraige</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 313</td>
+                <td> Causing miscarriage without woman’s consent</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 314</td>
+                <td>Death caused by act done with intent to cause miscarriage</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 315</td>
+                <td>Act done with intent to prevent child being born alive or to cause it to die after birth</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 316</td>
+                <td>Causing death of quick unborn child by act amounting to culpable homicide-</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 316</td>
+                <td>- Act done with intent to prevent child being born alive or to cause it to die after birth</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 317</td>
+                <td> Exposure and abandonment of child under twelve years, by parent or person having care of it</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 318</td>
+                <td> Concealment of birth by secret disposal of dead body</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 319</td>
+                <td>Hurt</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 320</td>
+                <td>Grievous hurt</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 321</td>
+                <td>Voluntarily causing hurt</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 322</td>
+                <td>Voluntarily causing grievous hurt</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 323</td>
+                <td> Punishment for voluntarily causing hurt</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 324</td>
+                <td> Voluntarily causing hurt by dangerous weapons or means</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 325</td>
+                <td> Punishment for voluntarily causing grievous hurt</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 326</td>
+                <td>Voluntarily causing grievous hurt by dangerous weapons or means</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 326A</td>
+                <td>Voluntarily causing grievous hurt by use of acid, etc</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 326B</td>
+                <td>Voluntarily throwing or attempting to throw acid, etc</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 327</td>
+                <td> Voluntarily causing hurt to extort property, or to constrain to an illegal act</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 328</td>
+                <td>Causing hurt by means of poison, etc., with intent to commit and offence</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 329</td>
+                <td> Voluntarily causing grievous hurt to extort property, or to constrain to an illegal act</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 330</td>
+                <td> Voluntarily causing hurt to extort confession or to compel restoration of property</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 331</td>
+                <td> Voluntarily causing grievous hurt to extort confession, or to compel restoration of property</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 332</td>
+                <td> Voluntarily causing hurt to deter public servant from his duty</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 333</td>
+                <td> Voluntarily causing grievous hurt to deter public servant from his duty</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 334</td>
+                <td>Voluntarily causing hurt on provocation</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 335</td>
+                <td>Voluntarily causing grievous hurt on provocation</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 336</td>
+                <td>Act endangering life or personal safety of others</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 337</td>
+                <td>Causing hurt by act endangering life or personal safety of others</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 338</td>
+                <td> Causing grievous hurt by act endangering life or personal safety of others</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 339</td>
+                <td>Wrongful restraint</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 340</td>
+                <td> Wrongful confinement</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 341</td>
+                <td> Punishment for wrongful restraint</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 342</td>
+                <td> Punishment for wrongful confinement</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 343</td>
+                <td>Wrongful confinement for three or more days</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 344</td>
+                <td>Wrongful confinement for ten or more days</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 345</td>
+                <td>Wrongful confinement of person for whose liberation writ has been issued</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 346</td>
+                <td>Wrongful confinement in secret</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td> section 347</td>
+                <td> Wrongful confinement to extort property, or constrain to illegal act</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 348</td>
+                <td>Wrongful confinement to extort confession, or compel restoration of property</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 349</td>
+                <td>Force</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 350</td>
+                <td>Criminal force</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 351</td>
+                <td>Assault</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 352</td>
+                <td> Punishment for assault or criminal force otherwise than on grave provocation</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 353</td>
+                <td> Assault or criminal force to deter public servant from discharge of his duty</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 354</td>
+                <td> Assault or criminal force to woman with intent to outrage her modesty</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 354A</td>
+                <td>- Sexual harassment and punishment for sexual harassment</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 354B</td>
+                <td>Voyeurism</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 354C</td>
+                <td>Assault or use of criminal force to woman with intent to disrobe</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 354D</td>
+                <td>Stalking</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 355</td>
+                <td>Assault or criminal force with intent to dishonour person, otherwise than on grave provocation</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 356</td>
+                <td> Assault or criminal force in attempt to commit theft of property carried by a person</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 357</td>
+                <td> Assault or criminal force in attempting wrongfully to confine a person</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 358</td>
+                <td> Assault or criminal force on grave provocation</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 359</td>
+                <td>Kidnapping</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 360</td>
+                <td> Kidnapping from India</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 361</td>
+                <td>Kidnapping from lawful guardianship</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 362</td>
+                <td>Abduction</td>
+            </tr>
+            <tr onclick="showContent('section3')">
+                <td>Section 363</td>
+                <td> Punishment for kidnapping</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function showContent(section) {
+            var allContent = document.querySelectorAll('.content-section');
+            allContent.forEach(function(element) {
+                element.style.display = 'none';
+            });
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

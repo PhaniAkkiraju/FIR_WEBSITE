@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FIR Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            position: relative;
+        }
+
+        .nav-links a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: transparent;
+            transform-origin: bottom right;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover::before,
+        .nav-links a:focus::before,
+        .nav-links a:active::before {
+            transform: scaleX(1);
+            background-color: white;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin: 0 0.5em;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .social-icons a:hover {
+            color: gold;
+        }
+
+        .content {
+            text-align: center;
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <!-- Include Font Awesome CSS (replace the link with the latest version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>FIR Website</h1>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="frontpage.html">Home</a>
+            <a id="faq-link" href="faq.html">FAQ</a>
+            <a id="contact-link" href="how.html">How It Works</a>
+        </div>
+        <div class="social-icons">
+            <!-- Instagram Icon and Link -->
+            <a href="https://www.instagram.com/your_instagram_account" target="_blank"><i class="fab fa-instagram"></i></a>
+            <!-- Facebook Icon and Link -->
+            <a href="https://www.facebook.com/your_facebook_page" target="_blank"><i class="fab fa-facebook"></i></a>
+            <!-- Twitter Icon and Link -->
+            <a href="https://twitter.com/your_twitter_account" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p>Have questions or concerns? Reach out to us through the following contact information:</p>
+
+        <div class="contact-details">
+            <p>Email: contact@firwebsite.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <!-- Add more contact details as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 FIR Website. All rights reserved by Meghana, Pujitha, Phani, Sathwika.</p>
+    </footer>
+
+</body>
+</html>
