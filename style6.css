@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Century Gothic', sans-serif;
+    background-color: black;
+    color: white;
+}
+.content {
+    margin-left: 19px; 
+    padding: 15px;
+}
+p{
+    color: white;
+}
+h2{
+    color: brown;
+}
+h1{
+    color: blueviolet;
+}
