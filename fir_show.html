@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View FIR Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .no-data {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>FIR DETAILS</h1>
+</header>
+<table id="firTable">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Contact Number</th>
+            <th>Present Address</th>
+            <th>Email address</th>
+            <th>Date and Time of the Incident</th>
+            <th>Location></th>
+            <th>Type of Incident</th>
+            <th>Detailed Description of the Incident</th>
+            <th>Names and Descriptions of Individuals Involved</th>
+            <th>Names of Any Witnesses</th>
+            <th>Contact Information of Any Witnesses</th>
+            <th>Statements from Witnesses</th>
+            <th>Date and Time of Registration</th>
+            <th>Sections of the Law</th>
+            <th>Additional Details</th>
+        </tr>
+    </thead>
+    <tbody id="firTableBody">
+        <!-- FIR details will be dynamically added here -->
+    </tbody>
+</table>
+
+<script>
+    // Get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const fullname = urlParams.get('fullname');
+    const contactnumber = urlParams.get('contactnumber');
+    const presentaddress = urlParams.get('presentaddress');
+    const EmailAddress = urlParams.get('EmailAddress');
+    const DateIncident = urlParams.get('DateIncident');
+    const Location = urlParams.get('Location');
+    const incidentType = urlParams.get('incidentType');
+    const DetailedDescription = urlParams.get('DetailedDescription');
+    const DescriptionsofIndividuals = urlParams.get('DescriptionsofIndividuals');
+    const Witnesses = urlParams.get('Witnesses');
+    const ContactInformation = urlParams.get('ContactInformation');
+    const Statements = urlParams.get('Statements');
+    const datetime = urlParams.get('datetime');
+    const section = urlParams.get('section');
+    const OtherRelevant = urlParams.get('OtherRelevant');
+    // Get other URL parameters similarly
+    
+    // Create a new table row
+    const row = document.createElement("tr");
+    // Insert FIR details into the row
+    row.innerHTML = "<td>" + fullname + "</td><td>" + contactnumber + "</td><td>"+ presentaddress +"</td><td>"+ EmailAddress + "</td><td>" + DateIncident + "</td><td>" + Location + "</td><td>" + incidentType + "</td><td>" + DetailedDescription + "</td><td>" + DescriptionsofIndividuals + "</td><td>" + Witnesses + "</td><td>" + ContactInformation + "</td><td>" + Statements + "</td><td>" + datetime + "</td><td>" + section + "</td><td>" + OtherRelevant + "</td>";
+    // Add row to the table
+    document.getElementById("firTableBody").appendChild(row);
+</script>
+</body>
+</html>
